@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="dashboard.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-        <script type="text/javascript" src="js/dashboard.js"></script>
+        <script type="text/javascript" src="dashboard.js"></script>
 	</head>
 
 <body>
