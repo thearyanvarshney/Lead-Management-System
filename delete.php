@@ -15,8 +15,8 @@ $result = mysqli_query($conn,"SELECT eid,fname,lname,email,phone from sales");
 
 <head>
   <title>Delete User!</title>
-<link rel="stylesheet" href="css/delete.css">
-<script type="text/javascript" src="js/delete.js">
+<link rel="stylesheet" href="delete.css">
+<script type="text/javascript" src="delete.js">
 
 </script>
 </head>
