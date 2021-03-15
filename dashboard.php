@@ -4,7 +4,7 @@
 
 <head>
 	<title>Dashboard</title>
-	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
+	<link rel="stylesheet" type="text/css" href="dashboard.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
         <script type="text/javascript" src="js/dashboard.js"></script>
