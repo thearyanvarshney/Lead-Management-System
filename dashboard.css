@@ -1,0 +1,300 @@
+@font-face {
+  src: url("../font/productsans.ttf");
+  font-family: myfont;
+}
+
+@font-face {
+  src: url("../font/alegreya.ttf");
+  font-family: myfont2;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  box-sizing: border-box;
+  background-color: LightCyan;
+  height: 100%;
+  font-family: myfont;
+  user-select: none;
+}
+
+body {
+  counter-reset: Serial;
+}
+
+#head-div {
+  box-sizing: border-box;
+  width: 99%;
+  height: 100px;
+  background: linear-gradient(to right, #9796f0, #fbc7d4);
+  margin: 5px 7px;
+  border-radius: 5px;
+  box-shadow: 2px 3px 10px 0px rgb(0, 0, 0);
+}
+
+#head-left {
+  float: left;
+  width: 25%;
+}
+
+#logo-div {
+  box-sizing: border-box;
+  background-image: url("../images/mainlogo.png");
+  background-size: contain;
+  height: 80px;
+  width: 245px;
+  margin-left: 8%;
+  margin-top: 2.5%;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 3px 10px 0px rgb(0, 0, 0);
+}
+
+#head-right {
+  float: right;
+  width: 75%;
+}
+
+#profile-div {
+  box-sizing: border-box;
+  float: right;
+  width: 25%;
+}
+
+#profile-left {
+  float: left;
+  width: 25%;
+}
+
+#profile-left>a>img {
+  margin: 20px 0;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 2px 3px 10px 0px rgb(0, 0, 0);
+}
+
+#profile-right {
+  float: right;
+  width: 75%;
+}
+
+#profile-right>a>p {
+  font-size: 25px;
+  margin-top: 35px;
+  color: black;
+}
+
+#profile-right>a {
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+}
+
+#body {
+  box-sizing: border-box;
+  margin: 5px 7px;
+  width: 99%;
+  border-radius: 5px;
+  height: 100%;
+  background-color: transparent;
+}
+
+#body-left {
+  float: left;
+  width: 20%;
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #9796f0, #fbc7d4);
+  padding-top: 30px;
+  text-align: center;
+  box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
+}
+
+#body-left-menu {
+  height: 10%;
+}
+
+#body-left-menu>button {
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  display: block;
+}
+
+.body-left-options {
+  font-family: myfont;
+  margin: auto;
+  font-size: 22px;
+  color: black;
+  border: none;
+  padding: 9px 20px;
+  background: linear-gradient(to right, #FC766A99, #5B84B166);
+  outline: none;
+  border: 2px solid #676767;
+  border-radius: 100px;
+  background-size: 0% 100%;
+  transition: 0.25s ease-in-out;
+  background-repeat: no-repeat;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.body-left-options:hover {
+  background-size: 100% 100%;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 2px 3px 10px 0px rgb(0, 0, 0);
+}
+
+.body-left-options:focus{
+  background-size: 100% 100%;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 2px 3px 10px 0px rgb(0, 0, 0);
+  background: linear-gradient(to right, #FC766A99, #5B84B166);
+}
+
+#logout-div {
+  margin-top: 200px;
+}
+
+#logout-div>a>button {
+  border: none;
+  font-family: myfont;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px 22px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(80, 80, 80, 0.8);
+}
+
+#logout-div>a>button:hover {
+  box-shadow: inset 0 0.6em 2em -0.3em rgba(0, 0, 0, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
+}
+
+#body-right {
+  float: right;
+  width: 79.60%;
+  height: 100%;
+}
+
+.rightcontent {
+  display: none;
+  background: linear-gradient(to right, #ec008c80, #fc6767B3);
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 0px black;
+}
+
+table {
+  margin: auto;
+  margin-top: 5%;
+  text-align: center;
+}
+
+th, td {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 16px;
+}
+
+tr td:first-child::after {
+  counter-increment: Serial;
+  content: counter(Serial);
+}
+
+.firstdiv {
+  height: 20%;
+  position: relative;
+  margin-top: 7%;
+  margin-left: 5%;
+  ;
+  width: 25%;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+.seconddiv {
+  width: 30%;
+  height: 60%;
+  position: absolute;
+  top: -30%;
+  left: 10%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.thirddiv {
+  height: 70%;
+  line-height: 800%;
+  width: 100%;
+  font-size: 21px;
+}
+
+.detail {
+  margin: 0;
+  line-height: 1;
+  display: inline-block;
+  width: 100%;
+  padding-left: 10%;
+  cursor: default;
+}
+
+.detail span {
+  float: right;
+  padding-right: 15%;
+}
+
+.clock {
+  float: left;
+  padding-right: 5px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.fourthdiv {
+  height: 30%;
+}
+
+.para {
+  padding-left: 9%;
+  margin-top: 3%;
+  height: 70%;
+  line-height: 150%;
+  font-family: myfont2;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: default;
+}
+
+.material {
+  filter: invert(100%);
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
